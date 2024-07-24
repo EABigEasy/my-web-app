@@ -23,10 +23,10 @@ jobs:
 
     - name: Deploy to EC2
       env:
-        AWS_ACCESS_KEY_ID: ${{AKIAW3MEDDQG4ZYMMGPM }}
-        AWS_SECRET_ACCESS_KEY: ${{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}}
+        AWS_ACCESS_KEY_ID: ${{ AKIAW3MEDDQG4ZYMMGPM }}
+        AWS_SECRET_ACCESS_KEY: ${{ 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 }}
         AWS_REGION: 'us-east-1'
-        EC2_INSTANCE_ID: ${{i-0d71bb19171a37e53 }}
+        EC2_INSTANCE_ID: ${{ i-0d71bb19171a37e53 }}
         EC2_USER: 'ec2-user'
       run: |
         zip -r my-web-app.zip .
